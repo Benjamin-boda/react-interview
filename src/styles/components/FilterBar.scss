@@ -1,0 +1,39 @@
+.filterbar__container {
+    display: flex;
+    justify-content: space-between;
+    margin: $s-size auto;
+    max-width: 110rem;
+}
+
+.filterbar_multiselect {
+    width: 30%;
+}
+
+.filterbar__item {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.filterbar__item__text {
+    font-size: $font-size-xxsmall;
+    margin: 0 $xs-size 0 0;
+
+    @media (min-width: $desktop-breakpoint) {
+        font-size: $font-size-small;
+    }
+}
+
+.filterbar__item__select {
+    border: 1px solid #E8EAED;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px -2px #9098A9;
+    cursor: pointer;
+    font-size: $font-size-xxsmall;
+    padding: 0;
+
+    @media (min-width: $desktop-breakpoint) {
+        font-size: $font-size-small;
+        padding: .7rem .5rem .7rem .12rem;
+    }
+}

@@ -1,0 +1,116 @@
+.card__container {
+    margin: 0 auto;
+    max-width: 110rem;
+}
+
+.card__display {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media (min-width: $desktop-breakpoint) {
+        align-items: initial;
+        flex-direction: row;
+    }
+}
+
+
+
+.card {
+    align-items: center;
+    border-radius:1rem;
+    box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+    display:flex;
+    flex-direction: column;
+    height: 20rem;
+    margin: 0 0 $m-size 0;
+    width: 28rem;
+
+    @media (min-width: $desktop-breakpoint) {
+        height: 23rem;
+        width: 33rem;
+    }
+}
+
+.card__title {
+    font-size: $font-size-small;
+    font-weight: bold;
+    margin: $s-size 0;
+
+    @media (min-width: $desktop-breakpoint) {
+        font-size: $font-size-medium;
+    }
+}
+
+.card__category {
+    font-size: $font-size-xsmall;
+    font-style: italic;
+
+    @media (min-width: $desktop-breakpoint) {
+        font-size: $font-size-small;
+    }
+}
+
+.card__button__div {
+    display: flex;
+    justify-content: center;
+    margin: $s-size 0;
+}
+
+.card__button__like {
+    background: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.card__like {
+    filter: invert(28%) sepia(36%) saturate(3691%) hue-rotate(93deg) brightness(98%) contrast(107%);
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.card__button__like:disabled {
+    opacity: 0.3;
+}
+
+.card__dislike {
+    filter: invert(24%) sepia(84%) saturate(7490%) hue-rotate(356deg) brightness(99%) contrast(120%);
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.card__progressbar {
+    height: 1.5rem;
+    width: 15rem;
+}
+
+.card__remove {
+    background: black;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: $font-size-xxsmall;
+    margin: 0 0 $m-size 0;
+    text-decoration: none;
+
+    @media (min-width: $desktop-breakpoint) {
+        font-size: $font-size-small;
+    }
+}
+
+.card__arrow {
+    height: 3rem;
+    width: 3rem;
+
+    @media (min-width: $desktop-breakpoint) {
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+.card__arrow__div {
+    display: flex;
+    justify-content: space-between;
+}

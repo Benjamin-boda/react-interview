@@ -1,0 +1,16 @@
+.header {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.header__image {
+    height: 10%;
+    padding: $s-size 0;
+    width: 20%;
+
+    @media (min-width: $desktop-breakpoint) {
+        padding: $m-size 0 $m-size 0;
+    }
+}
